@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>yahoo baba :jquery  syntax</h1>
+     
+    <div id="box" class="test">
+        <h2>test box 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate quia nostrum reprehenderit, fugit impedit commodi deserunt nesciunt assumenda labore consequuntur ut. Unde itaque ab laboriosam laborum ipsum iusto quisquam! </p>
+    </div>
+    
+    <ul id="list">
+        <li>orange</li>
+        <li class="test">banana</li>
+        <li>grapes</li>
+        <li class="test">apple</li>
+        <li>Guava</li>
+    </ul>
+
+
+    <script>
+        $(document).ready(function(){
+       $("ul li:lt(2)").css("border","2px solid red");
+        });
+    </script>
+</body>
+</html>

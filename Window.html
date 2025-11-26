@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Window Events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{ font-family: arial;}
+        #box{
+            width:70%;
+            height: 200px;
+            background:pink;
+            padding:10px;
+            border:1px solid #000;
+            overflow: auto;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h2>test box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatibus corrupti excepturi amet libero quae illo magnam est maxime alias dolorum nemo tenetur dolor eligendi quia quos, veniam ipsa perspiciatis, commodi ut quidem odit. Reprehenderit excepturi, vel debitis numquam tempora dolores, ullam iste vitae voluptatibus cupiditate quasi! Accusantium, sapiente sit. Ipsam quidem earum pariatur et aut expedita necessitatibus eum facere, repudiandae beatae itaque dolorum. Ea, corrupti recusandae! Quasi ullam architecto velit placeat laborum veniam accusantium aliquam quae nihil unde blanditiis quia enim, nulla iste culpa animi ipsa molestias rem ad facilis excepturi maiores dignissimos dolorem! Mollitia nam aperiam molestias atque.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque architecto nesciunt nam? Sapiente rem quaerat saepe. Dolore eum iste, dolores quasi temporibus mollitia minima, vitae ad adipisci debitis sequi? Beatae perferendis illo voluptatibus praesentium, saepe assumenda aspernatur optio sed perspiciatis quam quas aut quidem ab minima omnis dolorem! Illo explicabo architecto quae voluptatibus inventore vitae numquam? Quisquam iusto, consectetur veritatis consequatur iste nihil! Aperiam culpa in illo recusandae voluptatum fuga provident ratione fugit earum, labore aliquam vero doloremque officiis dolore cumque perferendis voluptatem soluta vitae! Error obcaecati, sapiente veniam illum eaque provident id voluptate exercitationem placeat nesciunt suscipit. Alias, tempore.</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+        $('#box').scroll(function(){
+            console.log("you are scrolling");
+
+        });
+
+
+        $(window).resize(function(){
+            console.log("you are resizing window");
+
+        });
+        });
+        
+    </script>
+</body>
+</html>

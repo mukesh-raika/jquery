@@ -36,5 +36,15 @@
        
       <button id="cloneBtn">clone</button>
 
+      <script>
+        $(document).ready(function(){
+          $('#cloneBtn').click(function(){
+            $('#box h2').clone().prependTo('#box2');
+            $('#box p').clone().appendTo('#box2');
+          });
+        
+        });
+      </script>
+
 </body>
 </html>

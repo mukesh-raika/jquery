@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On & Off Method </title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <style>
+        body{font-family: arial;}
+        #box{
+            padding:10px;
+            border:1px solid #000;
+        }
+        .boxbg{
+            background: pink;
+        }
+     </style>
+    
+</head>
+<body>
+    <h1> jQuery on()Methods </h1>
+      
+    <div id="box">
+        <h2>Test box</h2>
+        <p>Lorem ipsum <span>dolor sit amet</span> consectetur adipisicing elit. Doloremque assumenda necessitatibus quod? Nostrum, quam. Nihil ex reprehenderit ab. Quos delectus nihil aspernatur voluptatibus molestiae repellat aut voluptatem velit, dolorem omnis?</p>
+    </div>
+    <br>
+   
+     <button>Remove Event</button>
+
+    <script>
+        $(document).ready(function(){
+           $("#box").on({
+              "click" : function(){
+                $(this).css("background","orange");
+              },
+              "mouseover" : function(){
+                $(this).css("background","pink");
+              },
+
+              "mouseout" : function(){
+                 $(this).css("background","lightblue");
+              },
+
+           });
+            
+           $("button").click(function(){
+             $ ("#box").off("mouseover mouseout ")
+           });
+        });
+    </script>
+</body>
+</html>
